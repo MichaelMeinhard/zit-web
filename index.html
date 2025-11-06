@@ -18,17 +18,16 @@
             <a class="navbar-brand" href="index.html">
                 <img src="media/thub.png" width="45" class="rounded" alt="Logo">
             </a>
-            <div class="container-fluid fs-4 d-flex justify-content-between align-items-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-color fw-bold" href="index.html">Úvod</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-color" href="profile.html">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-color" href="game.html">Hra</a>
-                    </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item"><a class="nav-link text-color fw-bold" href="index.html">Úvod</a></li>
+                    <li class="nav-item"><a class="nav-link text-color" href="profile.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link text-color" href="game.html">Hra</a></li>
                 </ul>
                 <button id="themeButton" class="btn navButt btn-outline-dark">🌙 Tmavý režim</button>
             </div>
@@ -55,10 +54,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-color bg-warning py-3 fixed-bottom">
+    <footer class="text-center text-color bg-warning py-3">
         <p>&copy; 2025 ZIT Projekt | Autor: Michael Meinhard</p>
     </footer>
 
     <script src="js/script.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> <!-- Toggler -->
 </html>
