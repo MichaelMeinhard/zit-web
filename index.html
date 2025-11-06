@@ -24,7 +24,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0 fs-4">
                     <li class="nav-item"><a class="nav-link text-color fw-bold" href="index.html">Úvod</a></li>
                     <li class="nav-item"><a class="nav-link text-color" href="profile.html">Profil</a></li>
                     <li class="nav-item"><a class="nav-link text-color" href="game.html">Hra</a></li>
@@ -35,23 +35,52 @@
     </nav>
 
     <!-- Main Page -->
-    <section class="text-center py-5">
+    <header class="text-center py-5">
+        <div class="container hero-heading py-5 mb-2">
+            <h1 class="display-4 fw-bold">Vítejte na mém webu!</h1>
+        </div>
+    </header>
+    <section class="text-center">
         <div class="container">
-            <div class="hero-heading py-5 mb-4">
-                <h1 class="display-4 fw-bold">Vítejte na mém webu!</h1>
-            </div>
-            <p class="lead mt-3">
-                Tento web vznikl jako projekt do předmětu ZIT.
-                Najdete zde informace o mně, o mém profilu a také jednoduchou hru, kterou jsem vytvořil.
+            <h2 class="fw-bold mb-4">O tomto projektu</h2>
+            <p class="lead">Cílem tohoto webu je ukázat základní práci s moderními webovými technologiemi.
+                Stránka obsahuje tři části – úvodní přehled, profil s informacemi o autorovi a jednoduchý interaktivní
+                projekt (hra).
             </p>
-            <p>
-                Cílem bylo vyzkoušet si tvorbu webu pomocí HTML, CSS, JS a Bootstrapu.
-            </p>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML & CSS</h5>
+                            <p class="card-text">Struktura webu a stylování pomocí CSS a frameworku Bootstrap 5.
+                                Používám responzivní design pro všechna zařízení.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <a href="profile.html" class="btn btn-warning btn-lg mt-3">Přejít na profil</a>
-            <a href="game.html" class="btn btn-warning btn-lg mt-3">Přejít na projekt</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text">Na webu je implementován jednoduchý JavaScript pro interaktivní
+                                přepínání světlého a tmavého režimu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Mini projekt</h5>
+                            <p class="card-text">Součástí je malý projekt — jednoduchá hra, která demonstruje práci s
+                                logikou v Céčku.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="text-center text-color bg-warning py-3">
@@ -59,5 +88,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> <!-- Toggler -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toggler -->
+
 </html>

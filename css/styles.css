@@ -22,14 +22,18 @@ body.dark-theme .text-color {
 
 body.dark-theme .navbar {
     background-color: #1f1f1f !important;
+    transition: background-color 0.4s;
 }
 
 body.dark-theme .btn {
     color: #000000;
+    transition: color 0.4s;
 }
 
 body.dark-theme .navButt {
+    border-color: #ffc107;
     color: #ffffff;
+    transition: border-color 0.4s, color 0.4s;
 }
 
 body.dark-theme .navButt:hover {
@@ -39,17 +43,32 @@ body.dark-theme .navButt:hover {
 
 body.dark-theme a {
     color: #ffc107;
+    transition: color 0.4s;
 }
 
 body.dark-theme footer {
     background-color: #1f1f1f !important;
+    transition: background-color 0.4s;
 }
+
+body.dark-theme .card {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+/* Other stylers */
 
 .hero-heading {
     background-image: url("../media/raccoon.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
 
     border-radius: 10px;
     position: relative;
@@ -69,7 +88,7 @@ body.dark-theme footer {
 .hero-heading h1 {
     position: relative;
     z-index: 2;
-    /* aby byl nad tmavým filtrem */
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
+
