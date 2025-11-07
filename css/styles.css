@@ -57,10 +57,21 @@ body.dark-theme .card {
     transition: color 0.4s, background-color 0.4s;
 }
 
+body.dark-theme .greyBack {
+    background-color: #161616;
+    transition: background-color 0.4s;
+}
+
+body.dark-theme .list-group-item {
+    background-color: #161616;
+    color: #e0e0e0;
+    transition: color 0.4s, background-color 0.4s;
+}
+
 /* Other stylers */
 
 .hero-heading {
-    background-image: url("../media/raccoon.jpg");
+    /*background-image: url("../media/raccoon.jpg");*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,4 +102,3 @@ body.dark-theme .card {
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
-

@@ -18,32 +18,92 @@
             <a class="navbar-brand" href="index.html">
                 <img src="media/thub.png" width="45" class="rounded" alt="Logo">
             </a>
-            <div class="container-fluid fs-4 d-flex justify-content-between align-items-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-color" href="index.html">Úvod</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-color fw-bold" href="profile.html">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-color" href="game.html">Hra</a>
-                    </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0 fs-4">
+                    <li class="nav-item"><a class="nav-link text-color" href="index.html">Úvod</a></li>
+                    <li class="nav-item"><a class="nav-link text-color fw-bold" href="profile.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link text-color" href="game.html">Hra</a></li>
                 </ul>
-                <button id="themeButton" class="text-color btn btn-outline-dark">🌙 Tmavý režim</button>
+                <button id="themeButton" class="btn navButt btn-outline-dark">🌙 Tmavý režim</button>
             </div>
         </div>
     </nav>
 
     <!-- Main Page -->
-    <section class="text-center py-5">
+    <section class="py-5 text-center">
+        <div class="container">
+            <h1 class="fw-bold mb-4">O mně</h1>
+            <p class="lead">
+                Jmenuji se Michael Meinhard a studuji obor Informační technologie.
+                Baví mě práce s počítači, editování videí, tvoření a hraní her.
+                Tento web vznikl jako projekt do předmětu ZIT.
+            </p>
+        </div>
     </section>
 
+    <!-- Záliby -->
+    <section class="py-5 greyBack shadow">
+        <div class="container">
+            <h2 class="text-color text-center mb-4">Co mě baví</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <h4>💻 Editování</h4>
+                    <p>Rád vytvářím video edity, ať už z anime scén, nebo z reálných filmů a seriálů.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4>🎮 Hry</h4>
+                    <p>Baví mě hraní her, ale také mě láká jejich vývoj. Rád zkoumám, jak jsou postavené a jak fungují.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4>🎧 Hudba</h4>
+                    <p>Hudba mi pomáhá při práci i odpočinku. Nejčastěji poslouchám pop nebo drum&bass.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dovednosti -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Dovednosti</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush fs-5">
+                        <li class="list-group-item">HTML & CSS – mírně pokročilý</li>
+                        <li class="list-group-item">Programování – mírně pokročilý</li>
+                        <li class="list-group-item">Editování (AE 2023) – pokročilý</li>
+                        <li class="list-group-item">Grafika & Design – začátečník</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nejake cíle -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Cíle do budoucna</h2>
+            <p class="lead">
+                Do budoucna bych se chtěl věnovat editování videí a zlepšovat se v programování her,
+                aby moje projekty byly funkční i vizuálně zajímavé.
+            </p>
+        </div>
+    </section>
+
+
     <!-- Footer -->
-    <footer class="text-center text-color bg-warning py-3 fixed-bottom">
+    <footer class="text-center text-color bg-warning py-3">
         <p>&copy; 2025 ZIT Projekt | Autor: Michael Meinhard</p>
     </footer>
 
     <script src="js/script.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toggler -->
+
 </html>

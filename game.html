@@ -18,32 +18,105 @@
             <a class="navbar-brand" href="index.html">
                 <img src="media/thub.png" width="45" class="rounded" alt="Logo">
             </a>
-            <div class="container-fluid fs-4 d-flex justify-content-between align-items-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-color" href="index.html">Úvod</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-color" href="profile.html">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-color fw-bold" href="game.html">Hra</a>
-                    </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0 fs-4">
+                    <li class="nav-item"><a class="nav-link text-color" href="index.html">Úvod</a></li>
+                    <li class="nav-item"><a class="nav-link text-color" href="profile.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link text-color fw-bold" href="game.html">Hra</a></li>
                 </ul>
-                <button id="themeButton" class="text-color btn btn-outline-dark">🌙 Tmavý režim</button>
+                <button id="themeButton" class="btn navButt btn-outline-dark">🌙 Tmavý režim</button>
             </div>
         </div>
     </nav>
 
-    <!-- Main Page -->
-    <section class="text-center py-5">
+    <!-- Header -->
+    <header class="text-center px-3 py-5">
+        <div class="container hero-heading py-5 mb-2" style="background-image: url(media/breakout.jpeg)">
+            <h1 class="display-4 fw-bold">Projekt do UPR</h1>
+        </div>
+    </header>
+
+    <!-- O projektu -->
+    <section class="py-2 text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4">O projektu</h2>
+            <p class="lead">
+                V rámci předmětu <strong>UPR (Úvod do programování)</strong> jsem si jako svůj projekt vybral vytvoření
+                hry <strong>Breakout</strong>.
+                Tato klasická arkádová hra kombinuje jednoduchou hratelnost s programátorskou logikou.
+            </p>
+        </div>
     </section>
 
+    <!-- Co je Breakout -->
+    <section class="py-2 text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Co je to Breakout?</h2>
+            <p class="mb-4 lead">
+                <strong>Breakout</strong> je hra od společnosti Atari z roku 1976. Hráč ovládá malou plošinu
+                ve spodní části obrazovky a odráží míček, který rozbíjí cihly umístěné nahoře.
+                Cílem je zničit všechny cihly, aniž by míček spadl pod plošinu.
+            </p>
+            <img src="media/break.png" alt="Ukázka hry Breakout" class="img-fluid rounded shadow mb-4">
+        </div>
+    </section>
+
+    <!-- Princip a ovládání -->
+    <section class="py-3 text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Princip hry</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🎮 Ovládání</h5>
+                            <p class="card-text">
+                                Hráč pohybuje plošinou pomocí šipek <b>vlevo</b> a <b>vpravo</b>.
+                                Cílem je odrazit míček a zabránit jeho pádu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">💡 Herní mechanika</h5>
+                            <p class="card-text">
+                                Každý odraz míčku od cihly ji zničí a přidá hráči body. Po zničení všech cihel hráč
+                                vyhrává danou úroveň.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🔥 Cíl hry</h5>
+                            <p class="card-text">
+                                Rozbít všechny cihly s co nejvyšším skóre. Pokud míček spadne pod plošinu, hra končí.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Footer -->
-    <footer class="text-center text-color bg-warning py-3 fixed-bottom">
+    <footer class="text-center text-color bg-warning py-3">
         <p>&copy; 2025 ZIT Projekt | Autor: Michael Meinhard</p>
     </footer>
 
     <script src="js/script.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toggler -->
+
 </html>
